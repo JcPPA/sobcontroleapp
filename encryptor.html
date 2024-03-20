@@ -3,13 +3,13 @@
   <head>
 
     <!--Icon e Titulo do Site-->
-        <link rel="icon" type="image/png" href="./img/sobControleIconPage.png" alt="image/png">
+        <link rel="icon" type="image/png" href="./img/crypto.png" alt="image/png">
     
     <!--Meta Dados do Projeto-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="'IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Projeto SobControle</title>
+        <title>Encriptador</title>
     
         <link rel="stylesheet" href="./styles/stylesTelaInicial.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -21,9 +21,9 @@
         <link rel="stylesheet" href="./styles/stylesCronometro.css">
         <link rel="stylesheet" href="./styles/stylesEncriptador.css">
         <link rel="stylesheet" href="./styles/stylesLogin.css">
-
+    
         <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-        
+    
         <script src="script.js"></script>
     
   </head>
@@ -44,21 +44,48 @@
     </header>
 
     <main>
-        <section>
-            <h2>Seção 1</h2>
-            <p>Este é o conteúdo da seção 1.</p>
-        </section>
+      <section id="title_app">
+          <h1 id="title_app-principal">Encriptador e Descriptador:</h1>
+      </section>
+      <p>
+      </p>
+      <br>
 
-        <section>
-            <h2>Seção 2</h2>
-            <p>Este é o conteúdo da seção 2.</p>
-        </section>
     </main>
-
     <aside>
+      <div class="item-left">
+        <span>
+          <img id="item-img" src="./img/hacking.gif" id="ilustration" alt="img/ilustration/gif">
+        </span>
+        <p>
+          <span id="item-img_description">
+              (Seja esperto! Não use letras maiúsculas e <p> caracteres especiais, ou vão descobrir a mensagem!)</p>
+          </span>
+        </p>
+      </div>
+      <p></p>
 
-
-    </aside>
+          <nave id="item-right">
+            <div>
+                <label class="item-app" for="mensagem">Mensagem Secreta</label>
+                <textarea id="mensagem" rows="4"></textarea>
+                <button id="button-mensagem" onclick="encriptar()">Encriptar</button>
+                <button id="button-mensagem" onclick="deletar()">Deletar</button>
+            </div>
+            <div>
+                <label class="item-app" for="mensagemCriptada">Mensagem Criptada</label>
+                <textarea id="mensagemCriptada" rows="4" readonly></textarea>
+                <button id="button-mensagem" onclick="limparMensagemCriptada()">Deletar</button>
+                <button id="button-mensagem" onclick="copiarMensagemCriptada()">Copiar</button>
+            </div>
+            <div>
+                <label class="item-app" for="mensagemDescriptada">Mensagem Descriptada</label>
+                <textarea id="mensagemDescriptada" rows="4" readonly></textarea>
+                <button id="button-mensagem" onclick="descriptar()">Descriptar</button>
+                <button id="button-mensagem" onclick="limparMensagemDescriptada()">Deletar</button>
+            </div>
+          </nave>
+      </aside>
 
     <footer class="endPage">
       <p id="copyright">&copysr; 2024. Desafio Alura-Oracle. Todos os direitos são reservados ao dev. <a href="https://www.instagram.com/dia_dn3rd/" target="_blank" class="author" data-intem="Dia-de-Nerd">Dia-de-Nerd</a>.</p>
