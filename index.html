@@ -2,66 +2,97 @@
 <html lang="pt-BR">
   <head>
 
-    <!--Icon e Titulo do Site-->
+      <!--Icon e Titulo do Site-->
         <link rel="icon" type="image/png" href="./img/sobControleIconPage.png" alt="image/png">
     
-    <!--Meta Dados do Projeto-->
+      <!--Meta Dados do Projeto-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="'IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Projeto SobControle</title>
+        <title>SobControle - Des_Encryptador</title>
     
-        <link rel="stylesheet" href="./styles/stylesTelaInicial.css">
+      <!--Estilos das Páginas principal-->
+        <link rel="stylesheet" href="./styles/main-styles.css">
+                    
+      <!--Estilos das Páginas extras-->
+    
+
+      <!--Import de Icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-        <!--Estilos das Páginas extras-->
-        <link rel="stylesheet" href="./styles/stylesAgenda.css">
-        <link rel="stylesheet" href="./styles/stylesCalendario.css">
-        <link rel="stylesheet" href="./styles/stylesCronograma.css">
-        <link rel="stylesheet" href="./styles/stylesCronometro.css">
-        <link rel="stylesheet" href="./styles/stylesEncriptador.css">
-        <link rel="stylesheet" href="./styles/stylesLogin.css">
 
-        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-        
+      <!--Funções javascript-->
         <script src="script.js"></script>
-    
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+          
+        
+        
   </head>
-
-<body>
+  <body>
     <header>
-        <nav class="barMenu">
-          <div id="page" class="page">
-            <a href="./perfil.html" class="button"><span class="navBarItem">Perfil</span></a>
-          </div>
-          <div id="page" class="page">
-              <a href="./encryptor.html" class="button"><span class="navBarItem">Encriptador</span></a>
-          </div>
-          <div id="page" class="page">
-            <a href="./about.html" class="button"><span class="navBarItem">About Us</span></a>
-          </div>
-        </nav>
+      <!--Menu Principal-->
+        <!--Icon & TitleBar -->
+          <nav id="navBar">
+            <div>
+              <a href="./index.html"><img id="imgTitle" src="./img/Encrytor.png" alt="img/icon"></a>
+                <a id="titlePrincipal" href="./index.html">Des_Encryptador</a>
+              </a>
+            </div>
+            <div>
+              <button id="buttonNavBar"><a href="./about.html"><span id="navBarItem">About Us</span></a></button>
+            </div>
+          </nav>
+ 
     </header>
 
     <main>
-        <section>
-            <h2>Seção 1</h2>
-            <p>Este é o conteúdo da seção 1.</p>
-        </section>
+      <!--Encriptador e Descriptador-->
+      <section id="title_app">
+          <h1 id="title_app-principal">Encriptador e Descriptador</h1>
+      </section>
+      <p>
+      </p>
+      <br>
 
-        <section>
-            <h2>Seção 2</h2>
-            <p>Este é o conteúdo da seção 2.</p>
-        </section>
     </main>
-
     <aside>
+      <div class="item-left">
+        <span>
+          <img id="item-img" src="./img/desafio.gif" id="ilustration" alt="img/ilustration/gif">
+        </span>
+        <p>
+          <span id="item-img_description">
+              (Seja esperto! Não use letras maiúsculas e <p> caracteres especiais, ou vão descobrir a mensagem!)</p>
+          </span>
+        </p>
+      </div>
+      <p></p>
 
+          <nave id="item-right">
+            <div>
+                <label class="item-app" for="mensagem">Mensagem Secreta</label>
+                <textarea id="mensagem" rows="4"></textarea>
+                <button id="button-mensagem" onclick="encriptar()">Encriptar</button>
+                <button id="button-mensagem" onclick="deletar()">Deletar</button>
+            </div>
+            <div>
+                <label class="item-app" for="mensagemCriptada">Mensagem Criptada</label>
+                <textarea id="mensagemCriptada" rows="4" readonly></textarea>
+                <button id="button-mensagem" onclick="limparMensagemCriptada()">Deletar</button>
+                <button id="button-mensagem" onclick="copiarMensagemCriptada()">Copiar</button>
+            </div>
+            <div>
+                <label class="item-app" for="mensagemDescriptada">Mensagem Descriptada</label>
+                <textarea id="mensagemDescriptada" rows="4" readonly></textarea>
+                <button id="button-mensagem" onclick="descriptar()">Descriptar</button>
+                <button id="button-mensagem" onclick="limparMensagemDescriptada()">Deletar</button>
+            </div>
+          </nave>
+      </aside>
 
-    </aside>
-
-    <footer class="endPage">
+  
+    <footer>
       <p id="copyright">&copysr; 2024. Desafio Alura-Oracle. Todos os direitos são reservados ao dev. <a href="https://www.instagram.com/dia_dn3rd/" target="_blank" class="author" data-intem="Dia-de-Nerd">Dia-de-Nerd</a>.</p>
     </footer>
-</body>
+  </body>
+
 </html>

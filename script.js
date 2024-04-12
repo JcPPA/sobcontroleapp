@@ -1,3 +1,5 @@
+/*Código para cumprir Desafio - Corrigido*/
+
 function encriptar() {
     var mensagem = document.getElementById('mensagem').value;
     var mensagemCriptada = '';

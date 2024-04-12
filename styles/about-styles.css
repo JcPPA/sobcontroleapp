@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gafata&family=Jolly+Lodger&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+
+ /*   
+    background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/01/solo-leveling-epilogue-stories.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    */
+}
+
+header {
+    text-decoration: none;
+    padding: 10px;
+    background:linear-gradient(to bottom, rgb(25, 25, 25), rgb(26, 0, 141));
+    box-shadow: 0 1rem 1rem 0 rgba(33, 0, 80, 0.455),
+                inset 0 -5rem 3rem 0 rgba(0, 0, 0, 0.3);
+    
+
+}
+
+footer {
+    padding: 10px;
+    text-align: left;
+    padding: 10px;
+    text-shadow: 5px;
+    color:aliceblue;
+    background: linear-gradient(to top, rgb(119, 2, 115), rgb(26, 0, 141));
+    box-shadow: 0 -1rem -1rem 1 rgba(143, 21, 21, 0.455),
+                inset 0 -5rem 3rem 0 rgba(0, 0, 0, 0.3);
+    
+}
+
+
+/*Configuração Responsiva da Página*/
+/* Estilo para smartphones */
+@media only screen and (max-width: 600px) {
+    header, nav, section, footer {
+        padding: 5px;
+    }
+}
+/* Estilo para tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header, nav, section, footer {
+        padding: 10px;
+    }
+}
+/* Estilo para notebooks */
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+    header, nav, section, footer {
+        padding: 20px;
+    }
+}
+/* Estilo para Smart TVs */
+@media only screen and (min-width: 1601px) {
+    header, nav, section, footer {
+        padding: 30px;
+    }
+}
+
+/*Estilo da Barra ACIMA*/
+#navBar{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: space-between;
+    
+}
+
+#imgTitle {
+
+    image-resolution: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+#titlePrincipal{
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Bungee Spice', 'sans-serif';
+    color:rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+#navBarItem{
+    color:rgb(0, 0, 0);
+    border-top: 50rem;
+    border-radius: 5px;
+}
+
+#buttonNavBar{
+    border-radius: 55px;
+    font-family: 'calibri', sans-serif;
+    
+
+}
+
+button {
+
+    width: 100%;
+    padding: 10px;
+    background-color: #6f00ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.profile {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+}
+.profile h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.profile p {
+    text-align: left;
+}
+.profile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.profile ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+@media only screen and (max-width: 600px) {
+    /* Estilos para dispositivos móveis */
+    .profile img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    .profile h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    .profile p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+#iconSocial{
+    height: 50px;
+    width: 50px;
+}
+
+#h1Title{
+    display: flex;
+    font-family: 'calibri', sans-serif;
+
+}
+#h2Title{
+    display: flex;
+    font-family: 'calibri', sans-serif;
+}

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gafata&family=Jolly+Lodger&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+
+ /*   
+    background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/01/solo-leveling-epilogue-stories.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    */
+}
+
+header {
+    text-decoration: none;
+    padding: 10px;
+    background:linear-gradient(to bottom, rgb(25, 25, 25), rgb(26, 0, 141));
+    box-shadow: 0 1rem 1rem 0 rgba(33, 0, 80, 0.455),
+                inset 0 -5rem 3rem 0 rgba(0, 0, 0, 0.3);
+    
+
+}
+
+footer {
+    padding: 10px;
+    text-align: left;
+    padding: 10px;
+    text-shadow: 5px;
+    color:aliceblue;
+    background: linear-gradient(to top, rgb(119, 2, 115), rgb(26, 0, 141));
+    box-shadow: 0 -1rem -1rem 1 rgba(143, 21, 21, 0.455),
+                inset 0 -5rem 3rem 0 rgba(0, 0, 0, 0.3);
+    
+}
+
+
+/*Configuração Responsiva da Página*/
+/* Estilo para smartphones */
+@media only screen and (max-width: 600px) {
+    header, nav, section, footer {
+        padding: 5px;
+    }
+}
+/* Estilo para tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header, nav, section, footer {
+        padding: 10px;
+    }
+}
+/* Estilo para notebooks */
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+    header, nav, section, footer {
+        padding: 20px;
+    }
+}
+/* Estilo para Smart TVs */
+@media only screen and (min-width: 1601px) {
+    header, nav, section, footer {
+        padding: 30px;
+    }
+}
+
+/*Estilo da Barra ACIMA*/
+#navBar{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: space-between;
+    
+}
+
+#imgTitle {
+
+    image-resolution: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+#titlePrincipal{
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Bungee Spice', 'sans-serif';
+    color:whitesmoke;
+    font-weight: 400;
+}
+
+#navBarItem{
+    text-decoration: none;
+    color:white;
+    border-top: 50rem;
+    border-radius: 5px;
+}
+#buttonNavBar{
+    border-radius: 55px;
+    text-decoration: none;
+
+}
+
+
+/*Caracteristicas do App*/
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6f00ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*Estrutura do Conteudo da Pagina*/
+#title_app{
+    align-items: center;
+    color: white;
+
+
+}
+
+#title_app-principal{
+    font-size: 70px;
+    font-family: 'Jolly Lodger', sans-serif;
+    letter-spacing: 5px;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#item-img{
+    border-radius: 500px;
+    font-size: 15px;
+    height: inherit;
+    height: 300px;
+    width: 300px;
+
+}
+
+#item-img_description{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+
+}
+
+aside{
+    flex-direction: row;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    row-gap: 5px;
+    gap: 25px;
+
+}
+
+#button-mensagem{
+    border-radius: 12px;
+    height: 35px;
+    width: 100px;
+    font-family: 'Gafata', sans-serif;
+
+}
+
+.item-app{
+    display: flex;
+    justify-content: end;
+
+}
+#item-right{
+    flex: auto;
+    display: grid;
+    gap: 20px;
+    padding: 25px ;
+}
